@@ -12,12 +12,12 @@ def chk_spotipy():
     except ImportError:
         print("Dependencia faltante. Ejecutando setup.py para instalar dependencias...")
         # Ejecuta setup.py desde la carpeta Dependencies
-        subprocess.check_call([sys.executable, os.path.join("Dependencies", "setup.py")])
+        subprocess.check_call([sys.executable, os.path.join("tools", "setup.py")])
         # Intenta importar spotipy nuevamente después de la instalación
         import spotipy
 
 def get_credentials():
-    with open ("conf.json") as f:
+    with open ("conf\conf.json") as f:
         config = json.load(f)
         return config
 
