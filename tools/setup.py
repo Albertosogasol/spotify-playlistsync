@@ -1,3 +1,4 @@
+# INSTALACIÓN DE DEPENDENCIAS
 import subprocess
 import sys
 
